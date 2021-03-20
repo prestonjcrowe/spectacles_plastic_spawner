@@ -3,7 +3,7 @@
     "document_id": "Z10Tw_4Ialx_cB4nG6US",
     "original_document_id": "Z10Tw_4Ialx_cB4nG6US",
     "version": "27",
-    "lastChanged": "1616273742562",
+    "lastChanged": "1616277235544",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -455,8 +455,7 @@
                     "1571800088655492:59996",
                     "1571800088732833:60230",
                     "1571800088856519:60356",
-                    "1571800088879783:60548",
-                    "1616273289355802:237513"
+                    "1571800088879783:60548"
                 ]
             ]
         },
@@ -466,16 +465,14 @@
             "hints": [
                 ""
             ],
-            "lens": "Spectacles Depth",
-            "applicability": "4",
-            "lens_descriptors": [
-                "SUPPORTS_NEWPORT_DEPTH"
-            ]
+            "lens": "SpawnerRework",
+            "applicability": "2",
+            "lens_descriptors": ""
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "2",
-                "camera_type": "4"
+                "is_capture": "0",
+                "camera_type": "1"
             },
             "show_snap_ui": "true",
             "show_sponsored_ui": "false",
@@ -2141,7 +2138,7 @@
                     },
                     {
                         "k": "23027",
-                        "v": "243cbbca7878d2d413e5484058c971d4"
+                        "v": "9ac3ce5063809bcdf851a05a236429cb"
                     }
                 ],
                 "publicState": {
@@ -2149,7 +2146,7 @@
                         "isFolder": "true",
                         "lastModified": "2021-03-20T13:38:04",
                         "name": "Public",
-                        "hash": "8fc2b51d278180ae6670e1a438026177",
+                        "hash": "0d0749c24ef8be94a5adafb4522a4926",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -2574,9 +2571,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:54:56",
+                                "lastModified": "2021-03-20T14:53:20",
                                 "name": "Scripts",
-                                "hash": "c36022a01f4a508d5a2a94b95f1a8eef",
+                                "hash": "f5283efcd69e22a84085396a53c51d1f",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -2609,9 +2606,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-03-20T13:54:56",
+                                        "lastModified": "2021-03-20T14:53:20",
                                         "name": "FishSpawner.js",
-                                        "hash": "243cbbca7878d2d413e5484058c971d4",
+                                        "hash": "9ac3ce5063809bcdf851a05a236429cb",
                                         "children": ""
                                     },
                                     {
@@ -4123,7 +4120,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1616273289355802:237513"
+                    "1571800088654263:59966"
                 ]
             }
         },
