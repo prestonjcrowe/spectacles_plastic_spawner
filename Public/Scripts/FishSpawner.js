@@ -258,6 +258,8 @@ function onUpdate(eventData) {
 
     if (curTime >= spawnTime && activeObjects.length < script.count) {
         spawn();
+
+        // Force this to a small value so that all fishh spawn at once
         spawnDeltaTime = 0.10;
         spawnTime = curTime + spawnDeltaTime;
     }
