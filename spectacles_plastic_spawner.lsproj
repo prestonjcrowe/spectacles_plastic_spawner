@@ -3,7 +3,7 @@
     "document_id": "Z10Tw_4Ialx_cB4nG6US",
     "original_document_id": "Z10Tw_4Ialx_cB4nG6US",
     "version": "27",
-    "lastChanged": "1616272193840",
+    "lastChanged": "1616273742562",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -324,6 +324,14 @@
                     ],
                     [
                         "Scripts",
+                        "FishSpawner"
+                    ],
+                    [
+                        "Scripts",
+                        "Object Spawner Helpers"
+                    ],
+                    [
+                        "Scripts",
                         "Object Spawner Helpers",
                         "ExampleHelper[EDIT_ME]"
                     ],
@@ -354,11 +362,14 @@
                     ],
                     [
                         "Scripts",
-                        "ObjectSpawner"
+                        "PlasticSpawner"
                     ],
                     [
                         "Scripts",
                         "SpectaclesTimeLoopHelper"
+                    ],
+                    [
+                        "Sphere"
                     ],
                     [
                         "Textures"
@@ -444,7 +455,8 @@
                     "1571800088655492:59996",
                     "1571800088732833:60230",
                     "1571800088856519:60356",
-                    "1571800088879783:60548"
+                    "1571800088879783:60548",
+                    "1616273289355802:237513"
                 ]
             ]
         },
@@ -480,7 +492,7 @@
                 "back_preview_is_favorite": "false",
                 "front_preview_id": "bundle:Preview\/Videos\/Idle Person 3.webm",
                 "front_preview_is_favorite": "false",
-                "spectacles_preview_id": "bundle:Preview\/Videos\/Climbing\/Climbing.webm",
+                "spectacles_preview_id": "bundle:Preview\/Videos\/Playground\/Playground.webm",
                 "spectacles_preview_is_favorite": "false"
             },
             "preview_ie_project_config": {
@@ -1138,6 +1150,22 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "88",
+                    "uid": "1616272684513602:196418",
+                    "name": "Files\/File118.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "89",
+                    "uid": "1616273506750543:262726",
+                    "name": "Files\/File120.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -1185,7 +1213,9 @@
                 "4": "1571800088653533:59960",
                 "5": "1571800088654263:59966",
                 "6": "1571881227899637:235126",
-                "7": "1616270733404153:53875"
+                "7": "1616270733404153:53875",
+                "8": "1616273289355802:237513",
+                "9": "1616273348748040:245330"
             }
         },
         "LayerComponent": {
@@ -1659,6 +1689,18 @@
                 {
                     "k": "117",
                     "v": "Files\/File117.mesh"
+                },
+                {
+                    "k": "118",
+                    "v": "Files\/File118.mesh"
+                },
+                {
+                    "k": "119",
+                    "v": "Files\/File119.mesh"
+                },
+                {
+                    "k": "120",
+                    "v": "Files\/File120.js"
                 }
             ]
         },
@@ -1677,7 +1719,7 @@
                     },
                     {
                         "k": "113",
-                        "v": "Scripts\/ObjectSpawner.js"
+                        "v": "Scripts\/PlasticSpawner.js"
                     },
                     {
                         "k": "114",
@@ -1894,6 +1936,14 @@
                     {
                         "k": "23025",
                         "v": "Box.mesh"
+                    },
+                    {
+                        "k": "23026",
+                        "v": "Sphere.mesh"
+                    },
+                    {
+                        "k": "23027",
+                        "v": "Scripts\/FishSpawner.js"
                     }
                 ],
                 "hashes": [
@@ -1907,7 +1957,7 @@
                     },
                     {
                         "k": "113",
-                        "v": "cccf35470313bf3a42f178c8854af689"
+                        "v": "553d7681360e60436e4d97efa3e79a6c"
                     },
                     {
                         "k": "115",
@@ -2084,18 +2134,26 @@
                     {
                         "k": "23025",
                         "v": "621da74e06cc402b895f39376927a9d1"
+                    },
+                    {
+                        "k": "23026",
+                        "v": "ffbce66d7c12d942b13208740e9d0059"
+                    },
+                    {
+                        "k": "23027",
+                        "v": "243cbbca7878d2d413e5484058c971d4"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2021-03-20T13:05:33",
+                        "lastModified": "2021-03-20T13:38:04",
                         "name": "Public",
-                        "hash": "d729d794184a98d1e1fb324bf88cd709",
+                        "hash": "8fc2b51d278180ae6670e1a438026177",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:00:55",
+                                "lastModified": "2021-03-20T13:29:51",
                                 "name": "Textures",
                                 "hash": "4906c1d81082f662c28416deb8a8396e",
                                 "children": [
@@ -2129,13 +2187,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-03-20T13:00:55",
+                                        "lastModified": "2021-03-20T13:29:51",
                                         "name": "Animated Textures",
                                         "hash": "35b410d2883d8ea770a2b57027fe2dc6",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 5",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2157,7 +2215,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 2",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2179,7 +2237,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 3",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2201,7 +2259,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 4",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2223,7 +2281,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 8",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2245,7 +2303,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 1",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2267,7 +2325,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 6",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2289,7 +2347,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 7",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2311,7 +2369,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 0",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2333,7 +2391,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "cloud_puff 9",
                                                 "hash": "752bfa6324b544de0874bec89279a22c",
                                                 "children": [
@@ -2380,7 +2438,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:00:55",
+                                "lastModified": "2021-03-20T13:29:51",
                                 "name": "Materials",
                                 "hash": "b1cc535b7f6a7e9922d3289a2ac6a8f3",
                                 "children": [
@@ -2430,7 +2488,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:00:55",
+                                "lastModified": "2021-03-20T13:29:51",
                                 "name": "Default",
                                 "hash": "0aaceaeece0ef3068e7f5563677d49b8",
                                 "children": [
@@ -2459,7 +2517,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:00:55",
+                                "lastModified": "2021-03-20T13:29:51",
                                 "name": "Particles",
                                 "hash": "2b2bfe5b36da4e0342a22804feb29c88",
                                 "children": [
@@ -2516,13 +2574,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:27:47",
+                                "lastModified": "2021-03-20T13:54:56",
                                 "name": "Scripts",
-                                "hash": "eccfc26acf4fe7478c4b8b26f6777d7d",
+                                "hash": "c36022a01f4a508d5a2a94b95f1a8eef",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-03-20T13:00:55",
+                                        "lastModified": "2021-03-20T13:29:51",
                                         "name": "Duplication Utilities",
                                         "hash": "d44616b445a5dcfab905d5b8a52cffd9",
                                         "children": [
@@ -2544,21 +2602,28 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-03-20T13:27:47",
-                                        "name": "ObjectSpawner.js",
-                                        "hash": "cccf35470313bf3a42f178c8854af689",
-                                        "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
                                         "lastModified": "2021-02-23T20:14:38",
                                         "name": "SpectaclesTimeLoopHelper.js",
                                         "hash": "9fba1326638c3b1202054a4ac7ca7231",
                                         "children": ""
                                     },
                                     {
+                                        "isFolder": "false",
+                                        "lastModified": "2021-03-20T13:54:56",
+                                        "name": "FishSpawner.js",
+                                        "hash": "243cbbca7878d2d413e5484058c971d4",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2021-03-20T13:54:07",
+                                        "name": "PlasticSpawner.js",
+                                        "hash": "553d7681360e60436e4d97efa3e79a6c",
+                                        "children": ""
+                                    },
+                                    {
                                         "isFolder": "true",
-                                        "lastModified": "2021-03-20T13:00:55",
+                                        "lastModified": "2021-03-20T13:29:51",
                                         "name": "Object Spawner Helpers",
                                         "hash": "41e051796160bec68522e3db2c2dec49",
                                         "children": [
@@ -2630,20 +2695,27 @@
                                 "children": ""
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2021-03-20T13:38:04",
+                                "name": "Sphere.mesh",
+                                "hash": "ffbce66d7c12d942b13208740e9d0059",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-20T13:00:55",
+                                "lastModified": "2021-03-20T13:29:51",
                                 "name": "Assets",
                                 "hash": "909d33725deb16d16c2f0c50c639fce5",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-03-20T13:00:55",
+                                        "lastModified": "2021-03-20T13:29:51",
                                         "name": "cloud [REMOVE_ME]",
                                         "hash": "291e26d333a9265c11898e3be667bb99",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "Meshes",
                                                 "hash": "7805114a7989110830c2199f9a4345df",
                                                 "children": [
@@ -2700,7 +2772,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-03-20T13:00:55",
+                                                "lastModified": "2021-03-20T13:29:51",
                                                 "name": "Animations",
                                                 "hash": "59adb24ef3cdbe0297f05b395827453f",
                                                 "children": [
@@ -2780,19 +2852,6 @@
                         "source": "",
                         "additional": "",
                         "resources": [
-                            {
-                                "name": "ObjectSpawner",
-                                "type": "4",
-                                "subtype": "0",
-                                "resourceId": "10",
-                                "dependency": "0",
-                                "uid": "1571800086761834:58259",
-                                "fileId": "3",
-                                "originalId": "18446744073709551615",
-                                "publicId": "113",
-                                "source": "",
-                                "additional": ""
-                            },
                             {
                                 "name": "Duplication Utilities",
                                 "type": "0",
@@ -2924,6 +2983,32 @@
                                 "fileId": "54",
                                 "originalId": "18446744073709551615",
                                 "publicId": "175",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "FishSpawner",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "89",
+                                "dependency": "0",
+                                "uid": "1616273506750543:262726",
+                                "fileId": "120",
+                                "originalId": "18446744073709551615",
+                                "publicId": "23027",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "PlasticSpawner",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "10",
+                                "dependency": "0",
+                                "uid": "1571800086761834:58259",
+                                "fileId": "3",
+                                "originalId": "18446744073709551615",
+                                "publicId": "113",
                                 "source": "",
                                 "additional": ""
                             }
@@ -4018,6 +4103,19 @@
                         "publicId": "23025",
                         "source": "\/private\/var\/folders\/kc\/rpjz1zn53254mbcqjq2jfnyr0000gp\/T\/Lens Studio-dcMIiS\/\/system\/\/emergencyFiles\/emergencyMesh.mesh",
                         "additional": ""
+                    },
+                    {
+                        "name": "Sphere",
+                        "type": "3",
+                        "subtype": "0",
+                        "resourceId": "88",
+                        "dependency": "0",
+                        "uid": "1616272684513602:196418",
+                        "fileId": "118",
+                        "originalId": "119",
+                        "publicId": "23026",
+                        "source": "\/private\/var\/folders\/kc\/rpjz1zn53254mbcqjq2jfnyr0000gp\/T\/Lens Studio-dcMIiS\/\/system\/\/emergencyFiles\/emergencyMesh.mesh",
+                        "additional": ""
                     }
                 ]
             }
@@ -4025,7 +4123,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1571800088654263:59966"
+                    "1616273289355802:237513"
                 ]
             }
         },
