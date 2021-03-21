@@ -35,6 +35,8 @@ var CLIP_LENGTH = 30.0;
 var MAX_DISTANCE_FROM_CAMERA = 400.0;
 
 var runningTime = 0;
+var plasticSpawnedCount = 0;
+
 var spawnDeltaTime;
 var spawnTime;
 var prevTime;
@@ -53,8 +55,6 @@ var depthProvider;
 
 var hiddenLayerSet;
 var visibleLayerSet;
-
-
 
 //SpawnedObject the class responsible for spawned object's lifecycle, including its movement and collision
 
@@ -261,13 +261,14 @@ function onUpdate(eventData) {
 
     // Exit early if game hasn't started
     if (!script.shouldSpawn) {
-        print("PlasticSpawner waiting for game start");
+        print("PlasticSpawner waiting for game start...");
     }
 
     // Keep track of running time to avoid looping weirdness
     runningTime += getDeltaTime();
 
     if (curTime >= spawnTime && activeObjects.length < script.count) {
+        plasticSpawnedCount++;
         spawn();
         spawnDeltaTime = getFrequency();
         spawnTime = curTime + spawnDeltaTime;
@@ -429,6 +430,14 @@ function getFrequency() {
       " seconds, next update = " +
       nextUpdateTime
   );
+  
+  
+  // This value comes straight from our scaled time graph 
+  print("Current total plastic in Ocean: " + Math.floor(getTonsByYear(year)) + "kt");
+    
+  // This is the "close enough" value that we are approximating
+  // Choose whichever value you prefer
+  print("Current total plastic in Ocean: " + plasticSpawnedCount * 5 + "kt");
 
   return nextUpdateTime;
 }
