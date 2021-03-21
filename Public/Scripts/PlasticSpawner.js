@@ -27,6 +27,9 @@
 //@input bool advanced 
 //@input Component.Camera camera { "showIf" : "advanced", "showIfValue" : "true"}
 //@input Asset.Material spectaclesDepthMaterial { "showIf" : "advanced", "showIfValue" : "true"}
+//@ui {"widget":"separator"}
+//@input bool shouldSpawn  {"label":"Should Spawn"}
+
 
 var CLIP_LENGTH = 30.0;
 var MAX_DISTANCE_FROM_CAMERA = 400.0;
@@ -50,6 +53,8 @@ var depthProvider;
 
 var hiddenLayerSet;
 var visibleLayerSet;
+
+
 
 //SpawnedObject the class responsible for spawned object's lifecycle, including its movement and collision
 
@@ -137,7 +142,6 @@ SpawnedObject.prototype.destroy = function() {
 };
 
 // Description: The class that manages duplication and reuse of an object or resource (SceneObject, material, etc);
-
 var DuplicatePool = function(constructor, maxCount) {
     this.constructor = constructor;
     this.maxCount = maxCount;
@@ -230,7 +234,7 @@ function checkInitialized() {
 }
 
 function onTurnOn() {
-
+    print("Plastic Spawner Turned On")
     var initialized = checkInitialized();
     if (!initialized) {
         return;
@@ -253,8 +257,15 @@ function onUpdate(eventData) {
         onLoopStarted();
     }
 
-    runningTime += getDeltaTime();
     updateObjects(eventData.getDeltaTime());
+
+    // Exit early if game hasn't started
+    if (!script.shouldSpawn) {
+        print("PlasticSpawner waiting for game start");
+    }
+
+    // Keep track of running time to avoid looping weirdness
+    runningTime += getDeltaTime();
 
     if (curTime >= spawnTime && activeObjects.length < script.count) {
         spawn();
@@ -380,8 +391,8 @@ const START_YEAR = 1965;
 const MINIMUM_PLASTIC_FREQUENCY = 1;
 
 function getCurrentYear() {
-  var gameTime = getTime() * YEARS_PER_SEC;
-  var year = START_YEAR + gameTime;
+  var gameTime = (runningTime) * YEARS_PER_SEC;
+  var year = Math.floor(START_YEAR + gameTime);
 
   return year;
 }
@@ -393,7 +404,7 @@ function getTonsByYear(year) {
 function getFrequency() {
   // For now, assuming 1s = 1 year
   var gameTime = (runningTime) * YEARS_PER_SEC;
-  var year = START_YEAR + gameTime;
+  var year = Math.floor(START_YEAR + gameTime);
   print(year);
 
   // Get tons of plastic
@@ -421,5 +432,3 @@ function getFrequency() {
 
   return nextUpdateTime;
 }
-
-
