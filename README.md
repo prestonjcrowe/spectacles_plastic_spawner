@@ -35,8 +35,8 @@ will do the following:
 *If inside of PlasticSpawner.js*  
 `script.shouldSpawn = true;`
 
-*If inside of another file*
-`script.PlasticSpawner.api.start()`  
+*If inside of another file*  
+`script.PlasticSpawner.api.start();`  
 ### To Run
 `Project Info -> Check Rear Camera Only -> Send to device`
 
