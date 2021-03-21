@@ -3,7 +3,7 @@
     "document_id": "Z10Tw_4Ialx_cB4nG6US",
     "original_document_id": "Z10Tw_4Ialx_cB4nG6US",
     "version": "27",
-    "lastChanged": "1616364449340",
+    "lastChanged": "1616368411278",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -273,6 +273,9 @@
                         "clouf_face1"
                     ],
                     [
+                        "Behavior"
+                    ],
+                    [
                         "Box"
                     ],
                     [
@@ -328,10 +331,6 @@
                     ],
                     [
                         "Scripts",
-                        "Object Spawner Helpers"
-                    ],
-                    [
-                        "Scripts",
                         "Object Spawner Helpers",
                         "ExampleHelper[EDIT_ME]"
                     ],
@@ -367,6 +366,10 @@
                     [
                         "Scripts",
                         "SpectaclesTimeLoopHelper"
+                    ],
+                    [
+                        "Scripts",
+                        "StarfishSpawner"
                     ],
                     [
                         "Sphere"
@@ -452,6 +455,7 @@
                 [
                     "1571800088650866:59934",
                     "1571800088653228:59958",
+                    "1571800088654263:59966",
                     "1571800088655492:59996",
                     "1571800088732833:60230",
                     "1571800088856519:60356",
@@ -485,7 +489,7 @@
                 "spectacles_preview_is_favorite": "false"
             },
             "preview_videos_project_config": {
-                "back_preview_id": "bundle:Preview\/Videos\/Patio.webm",
+                "back_preview_id": "bundle:Preview\/Videos\/Stairs.webm",
                 "back_preview_is_favorite": "false",
                 "front_preview_id": "bundle:Preview\/Videos\/Idle Person 3.webm",
                 "front_preview_is_favorite": "false",
@@ -1163,6 +1167,22 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "90",
+                    "uid": "1616365545425623:465955",
+                    "name": "Files\/File121.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "91",
+                    "uid": "1616368387743298:559859",
+                    "name": "Files\/File122.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -1212,7 +1232,8 @@
                 "6": "1571881227899637:235126",
                 "7": "1616270733404153:53875",
                 "8": "1616273289355802:237513",
-                "9": "1616273348748040:245330"
+                "9": "1616273348748040:245330",
+                "10": "1616368387874222:559871"
             }
         },
         "LayerComponent": {
@@ -1698,6 +1719,14 @@
                 {
                     "k": "120",
                     "v": "Files\/File120.js"
+                },
+                {
+                    "k": "121",
+                    "v": "Files\/File121.js"
+                },
+                {
+                    "k": "122",
+                    "v": "Files\/File122.js"
                 }
             ]
         },
@@ -1941,6 +1970,14 @@
                     {
                         "k": "23027",
                         "v": "Scripts\/FishSpawner.js"
+                    },
+                    {
+                        "k": "23028",
+                        "v": "Scripts\/StarfishSpawner.js"
+                    },
+                    {
+                        "k": "23029",
+                        "v": "Behavior.js"
                     }
                 ],
                 "hashes": [
@@ -1954,7 +1991,7 @@
                     },
                     {
                         "k": "113",
-                        "v": "00aa0174e8d14617f5288ac88a6eedc3"
+                        "v": "f2b84056699bdcf758e5b59b1206af33"
                     },
                     {
                         "k": "115",
@@ -2139,14 +2176,22 @@
                     {
                         "k": "23027",
                         "v": "9ac3ce5063809bcdf851a05a236429cb"
+                    },
+                    {
+                        "k": "23028",
+                        "v": "971e2d91208667558730cc329a1c4611"
+                    },
+                    {
+                        "k": "23029",
+                        "v": "91c13f7497081d3638dd81f8c7b017fd"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2021-03-20T13:38:04",
+                        "lastModified": "2021-03-21T16:13:07",
                         "name": "Public",
-                        "hash": "b14912e68a6df86a4adbe0141886b09c",
+                        "hash": "6366d525a99968b1b322b434f285e058",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -2513,6 +2558,13 @@
                                 ]
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2021-03-21T16:13:07",
+                                "name": "Behavior.js",
+                                "hash": "91c13f7497081d3638dd81f8c7b017fd",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
                                 "lastModified": "2021-03-20T13:29:51",
                                 "name": "Particles",
@@ -2571,9 +2623,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-03-21T15:07:04",
+                                "lastModified": "2021-03-21T15:38:48",
                                 "name": "Scripts",
-                                "hash": "95f6ddd3bd84ca0a31ba180e35241fe4",
+                                "hash": "1ad2866b185ac331a442ac6d544fb4a7",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -2613,9 +2665,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-03-21T15:07:04",
+                                        "lastModified": "2021-03-21T15:38:48",
                                         "name": "PlasticSpawner.js",
-                                        "hash": "00aa0174e8d14617f5288ac88a6eedc3",
+                                        "hash": "f2b84056699bdcf758e5b59b1206af33",
                                         "children": ""
                                     },
                                     {
@@ -2674,6 +2726,13 @@
                                                 "children": ""
                                             }
                                         ]
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2021-03-21T15:26:05",
+                                        "name": "StarfishSpawner.js",
+                                        "hash": "971e2d91208667558730cc329a1c4611",
+                                        "children": ""
                                     },
                                     {
                                         "isFolder": "false",
@@ -3006,6 +3065,19 @@
                                 "fileId": "3",
                                 "originalId": "18446744073709551615",
                                 "publicId": "113",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "StarfishSpawner",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "90",
+                                "dependency": "0",
+                                "uid": "1616365545425623:465955",
+                                "fileId": "121",
+                                "originalId": "18446744073709551615",
+                                "publicId": "23028",
                                 "source": "",
                                 "additional": ""
                             }
@@ -4112,6 +4184,19 @@
                         "originalId": "119",
                         "publicId": "23026",
                         "source": "\/private\/var\/folders\/kc\/rpjz1zn53254mbcqjq2jfnyr0000gp\/T\/Lens Studio-dcMIiS\/\/system\/\/emergencyFiles\/emergencyMesh.mesh",
+                        "additional": ""
+                    },
+                    {
+                        "name": "Behavior",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "91",
+                        "dependency": "0",
+                        "uid": "1616368387743298:559859",
+                        "fileId": "122",
+                        "originalId": "18446744073709551615",
+                        "publicId": "23029",
+                        "source": "\/private\/var\/folders\/kc\/rpjz1zn53254mbcqjq2jfnyr0000gp\/T\/Lens Studio-tAVbjU\/\/system\/\/emergencyFiles\/emergencyJs.js",
                         "additional": ""
                     }
                 ]

@@ -262,6 +262,7 @@ function onUpdate(eventData) {
     // Exit early if game hasn't started
     if (!script.shouldSpawn) {
         print("PlasticSpawner waiting for game start...");
+        return;
     }
 
     // Keep track of running time to avoid looping weirdness
@@ -440,4 +441,9 @@ function getFrequency() {
   print("Current total plastic in Ocean: " + plasticSpawnedCount * 5 + "kt");
 
   return nextUpdateTime;
+}
+
+script.api.start = function(){
+    print("PlasticSpawner started!");
+    script.shouldSpawn = true;
 }
